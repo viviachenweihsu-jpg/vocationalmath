@@ -11,6 +11,7 @@
 <style>
 :root{--bg:#FBFAF7;--surface:#FFFFFF;--ink:#3A4650;--muted:#667482;--line:#E6E9EC;--pond:#5B7A8C;--pond-soft:#E3ECF1;--yuzu:#F2D9D0;--good:#4F7A5C;--warn:#8A6A3A;--bad:#B0524A;--r:16px}
 *{box-sizing:border-box}
+:focus-visible{outline:3px solid var(--pond);outline-offset:2px}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans TC","Zen Maru Gothic",sans-serif;line-height:1.7;font-size:17px}
 h1,h2,h3,.tab{font-family:"Zen Maru Gothic","Noto Sans TC",sans-serif}
 header{background:var(--surface);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
@@ -23,7 +24,7 @@ header{background:var(--surface);border-bottom:1px solid var(--line);position:st
 main{max-width:880px;margin:0 auto;padding:16px}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:18px;margin-bottom:14px}
 .chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
-.chip{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:6px 14px;font-size:14px;color:var(--ink);cursor:pointer}
+.chip{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:9px 14px;min-height:40px;font-size:14px;color:var(--ink);cursor:pointer}
 .chip.on{background:var(--pond);border-color:var(--pond);color:#fff}
 .btn{border:1px solid var(--pond);background:var(--pond);color:#fff;border-radius:12px;padding:10px 18px;font-size:16px;cursor:pointer;font-family:inherit}
 .btn.ghost{background:var(--surface);color:var(--pond)}
@@ -41,7 +42,7 @@ main{max-width:880px;margin:0 auto;padding:16px}
 .good{color:var(--good)}.bad{color:var(--bad)}.warn{color:var(--warn)}
 .row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
 input[type=text],input[type=number]{font:inherit;padding:10px 12px;border:1px solid var(--line);border-radius:12px;width:130px}
-.tbtn{font-size:13px;color:var(--muted);background:none;border:1px solid var(--line);border-radius:999px;padding:3px 12px;cursor:pointer}
+.tbtn{font-size:14px;color:var(--muted);background:none;border:1px solid var(--line);border-radius:999px;padding:8px 14px;min-height:40px;cursor:pointer}
 .tbtn.on{background:var(--yuzu);color:var(--ink)}
 body.proj{font-size:24px}
 body.proj .ex{font-size:21px}
